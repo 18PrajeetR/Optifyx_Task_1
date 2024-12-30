@@ -1,0 +1,341 @@
+.headercontainer{
+  background-image: url('pppp\ -\ Copy.jpg'); /* Replace with your image URL */
+  background-size: cover; /* Ensures the image covers the full container */
+  background-position: center; /* Centers the image horizontally and vertically */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  width: 100%; /* Ensures the full width of the viewport */
+  height: 90vh; /* Full viewport height or adjust if you need a smaller section */
+  margin: 0; /* Removes default margins */
+  padding: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  
+}
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding: 35px;
+  font-size: 1.3rem;
+  color:hsl(0, 0%, 50%);
+ 
+
+}
+.navbar p{
+  padding: 10px;
+  position: relative;
+}
+.navbar p:hover{
+  padding: 9.5px;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+.homecontainer{
+  color: hsl(0, 0%, 90%);
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 20px;
+}
+.homecontainer h2{
+  font-size: 2rem; 
+  padding-left: 20px;
+}
+.name{
+  color: rgb(23, 138, 138);
+  font-size: 3.5rem;
+  animation: slideIn 2s ease-out;
+  font-weight: bold;
+  display: inline-block; /* Allows width animation */
+  white-space: nowrap; /* Keeps text on one line */
+  overflow: hidden; /* Hide overflowing text during typing */
+  border-right: 4px solid #00ffcc; /* Simulate cursor */
+  animation: typing 4s steps(12) 1, blink 0.7s infinite; /* Typing and cursor blinking */
+}
+
+.description{
+  font-size: 2rem;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Typing animation */
+@keyframes typing {
+  from {
+    width: 0; /* Start with no width */
+  }
+  to {
+    width: 7ch; /* Reveal full text */
+  }
+}
+.homebutton{
+  background-color: hsl(180, 100%, 20%);
+  color: hsl(0, 0%, 80%);
+  padding: 15px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  margin-left: 25px;
+}
+.homebutton:hover{
+  background-color: hsl(180, 100%, 15%);
+  border-radius: 15px;
+  color: hsl(0, 0%, 95%);
+  padding: 18px;
+}
+
+.whoamicontainer {
+  font-family:'Times New Roman', Times, serif;
+  height: auto; /* Allow dynamic height based on content */
+  max-width: 40%;
+  text-align: justify;
+  margin-left: 30%; /* Align the container to the right */
+  margin-right: 30%;
+  margin-top: 10%;
+  margin-bottom: 20%; /* Add some space on the right */
+  color: rgb(39, 39, 39);
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center-align content, including the image */
+  background: linear-gradient(hsl(0, 0%, 80%), hsl(195, 53%, 69%)); /* Optional gradient */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a soft shadow */
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.whoamicontainer h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.whoamicontainer h4 {
+  text-align:justify;
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+  line-height: 20px;
+}
+
+.image {
+  height: 250px; /* Adjust the size as needed */
+  width: 250px; /* Maintain a circular aspect ratio */
+  border-radius: 60%;
+  margin-bottom: 1rem; /* Add spacing below the image */
+ object-fit: cover; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a shadow to the image */
+  margin-top: 10px;
+}
+/* What I Bring Section */
+#what-i-bring {
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+
+#what-i-bring h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Flex Container for Layout */
+.skills-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 50px;
+  
+}
+
+/* Left Side: Paragraph */
+.skills-description {
+  flex: 10;
+  max-width: 50%;
+}
+
+.skills-description h4 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.para {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: justify;
+  max-width: 100%;
+}
+
+/* Right Side: Skills Bars */
+.skills-progress {
+  flex: 1;
+  max-width: 50%;
+}
+
+.skills-progress h4 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.skill {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.skill span {
+  font-size: 1rem;
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 5px;
+  height: 20px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  text-align: center;
+  color: white;
+  line-height: 20px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+.teal {
+  background-color: #008080;
+}
+
+
+.highlightsection{
+ display: flex;
+ background-color: black;
+  color: whitesmoke;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 30px;
+
+}
+.projh2{
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 10px;
+  
+}
+.project{
+  /* max-width: 33%; */
+  padding: 20px;
+  background-color: teal;
+  margin: 30px;
+  font-size: 1.25rem;
+  border-radius: 10px;
+  max-height: 25%;
+  justify-content: space-between;
+  box-shadow: 1px 1px 5px teal;
+  text-align: justify;
+}
+.project:hover{
+ z-index: 2;
+ opacity: 0.99;
+  cursor: pointer;
+}
+.project h3{
+  color: black;
+  text-align: center;
+}
+.project li{
+  
+  padding-right: 10px;
+}
+.imaa{
+  width: 25px;
+  height: 25px;
+   border-radius: 10px;
+   border: black 2px solid;
+
+ 
+  
+}
+.hellodiv{
+  max-width: 50%;
+  text-align: justify;
+  line-height:25px;
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+.hellodiv li{
+  list-style: none;
+}
+.footer{
+  background-image: url(pppp\ -\ Copy.jpg);
+  width: 100vw;
+  height: 20vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: whitesmoke;
+  padding: 30px;
+ 
+}
+.containerf{
+  margin-left: 40%;
+}
+ 
+
+/* Skills Section */
+.skills-container {
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 600px;
+  text-align: center;
+}
+
+.skills-container h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.skill {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.skill span {
+  font-size: 18px;
+  color: #444;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  height: 20px;
+}
+
+.progress {
+  height: 100%;
+  text-align: center;
+  color: white;
+  line-height: 20px;
+  font-size: 14px;
+  white-space: nowrap;
+  border-radius: 5px;
+}
+
+.teal {
+  background-color: #008080; /* Teal color */
+}

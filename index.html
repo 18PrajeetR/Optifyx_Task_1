@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!---Header-->
+    <div class="headercontainer">
+        <div class="navbar">
+            <p class="nav-link" data-target="home">Home</p>
+            <p class="nav-link" data-target="who-am-i">Who Am I?</p>
+            <p class="nav-link" data-target="what-i-bring">What I Bring!</p>
+            <p class="nav-link" data-target="highlights">Highlights</p>
+            <p class="nav-link" data-target="say-hello">Say Hello</p>
+        </div>
+         <!---Home section-->
+        <div id="home" class="homecontainer">
+            <h2>Hi..This is <br> <span class="name">Prajeet!.. </span><span class="description"> <br> Java Developer</span></h2>
+            <a href="Resume.pdf" download="Resume-Prajeet.pdf">
+                <button class="homebutton">Hire Me!</button> 
+              </a><br>
+        </div>
+    </div>
+    <!--Who am I section--->
+    <div id="who-am-i" class="whoamicontainer">
+        <center><h3>Who am I?</h3></center>
+        <img src="prajeet. - Copy.jpg" alt="" class="image">
+        <h4>I’m Prajeet, an aspiring Java developer with a strong passion for creating user-friendly, interactive web experiences. Currently honing my skills frontend frameworks, I enjoy building creative projects that combine aesthetics and functionality. I’m eager to learn, grow, and contribute to the world of web development.</h4>
+    </div>
+    
+    <<!-- What I Bring Section -->
+<div id="what-i-bring">
+    <h2>What I Bring!</h2>
+    <div class="skills-container">
+        <!-- Left Side: Paragraph -->
+        <div class="skills-description">
+            <h4>Skills and Interests</h4>
+            <p class="para">
+                As a passionate and aspiring frontend developer, I specialize in HTML, CSS, and JavaScript, building interactive and visually appealing user interfaces. With a foundation in core Java and experience in developing projects like e-commerce websites, news generation apps, and air quality prediction models, I bring a unique blend of creativity and technical precision to every task. I also have hands-on expertise in APIs, machine learning algorithms, and operating systems concepts like inter-process communication. My ability to preprocess datasets, fine-tune models, and create hybrid ensemble systems highlights my analytical mindset and problem-solving abilities.
+            </p>
+        </div>
+        <!-- Right Side: Skills Bars -->
+        <div class="skills-progress">
+            <h4>Technical Skills</h4>
+            <div class="skill">
+                <span>HTML</span>
+                <div class="progress-bar">
+                    <div class="progress teal" style="width: 100%;">100%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>CSS</span>
+                <div class="progress-bar">
+                    <div class="progress teal" style="width: 90%;">90%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>JavaScript</span>
+                <div class="progress-bar">
+                    <div class="progress teal" style="width: 75%;">75%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>Bootstrap</span>
+                <div class="progress-bar">
+                    <div class="progress teal" style="width: 80%;">80%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>Java</span>
+                <div class="progress-bar">
+                    <div class="progress teal" style="width: 85%;">85%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>React JS</span>
+                <div class="progress-bar">
+                    <div class="progress teal" style="width: 50%;">50%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+       <!--Highlights section-->
+       <h2 id="highlights" class="projh2">Highlights</h2>
+       <section class="highlightsection">
+        <div class="project">
+            <h3>Daily Expense Tracker</h3>
+            <p>A MERN stack application that helps users manage their daily expenses and offers financial advice.</p>
+            <ol type="i">
+                <li>Tracks users' expenses and categorizes them.</li>
+                <li>Offers personalized financial tips and also monthly budget.</li>
+            </ol>
+        </div>
+        <div class="project">
+            <h3>Automated News Generator</h3>
+            <p>Java-based website that curates news from sources like Times of India and The Hindu based on user preferences.</p>
+            <ol type="i">
+                <li>Filters inappropriate content for specific users based on their age, preferences.</li>
+                <li>Allows custom selection of news topics and sources.</li>
+            </ol>
+        </div>
+        <div class="project">
+            <h3>AQI Prediction Model</h3>
+            <p>A machine learning project that uses ensemble methods to predict Air Quality Index (AQI).</p>
+            <ol type="i">
+                <li>Ensembles linear regression and ridge for accuracy.</li>
+                <li>Features preprocessing, feature ranking, and metrics analysis.</li>
+            </ol>
+        </div>
+       </section>
+       <!---Say hello section-->
+       <h2 id="say-hello" class="projh2">Before you leave...</h2>
+       <div class="hellodiv">
+        <p>I'm always excited to connect with like-minded individuals, collaborate on creative projects, or explore new opportunities. Feel free to reach out to me for any queries, feedback, or just to say hi!</p>
+        <ul>
+            <li>Mail: <br> rpbnu1139@gmail.com</li> <br>
+            <li>LinkedIn:<br> Prajeet R</li>
+       </div>
+       <!----Footer section-->
+       <section class="footer">
+        <div class="containerf">
+        <h2> Prajeet<br></h2>
+<p>&copy; |2024 All rights reserved</p>
+        <img src="download (1).jpeg" alt="" class="imaa">
+        <img src="instagram-black-logo-on-transparent-background-free-vector.jpg" alt="" class="imaa">
+        <img src="download (2).jpeg" alt="" class="imaa">
+        </div>
+       </section>
+    
+    <script>
+        // JavaScript for smooth scrolling
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                const targetId = this.getAttribute('data-target');
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
