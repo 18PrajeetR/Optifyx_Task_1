@@ -15,3 +15,5 @@ A simple, interactive to-do list web app designed using HTML, CSS, and JavaScrip
 - Smooth animations on task addition/deletion
 - Local storage integration (optional enhancement)
 
+# Link:
+https://18prajeetr.github.io/Optifyx_Task_1/
